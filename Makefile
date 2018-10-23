@@ -13,7 +13,7 @@ INCLUDE = -I.
 LIBS = -lc -lm
 
 
-all: test demo-bs compressor
+all: test compressor
 
 test: test.C Huffman.H 
 	$(CXX) $(FLAGS) $(INCLUDE) $@.C -o $@ $(LIBS)
